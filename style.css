@@ -1,0 +1,105 @@
+@charset "UTF-8";
+* {
+  /*обращение ко всем тегам страницы*/
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  /*меняет подсчет ширины блока*/
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+/*убираем обводку у некоторых браузеров*/
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+/*блочные теги*/
+html, body {
+  /*уравнение поведение шрифтов для браузеров*/
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+/*наследование шрифта*/
+input::-ms-clear {
+  display: none;
+}
+
+/*убирает особенности браузеров и удаляются стили маркированных списков*/
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "a_AvanteTitulInline", arial;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  transition-duration: 1s;
+  margin: 0 0 0 0;
+  padding: 100px 0 0 0;
+}
+
+body {
+  background: url(../img/tracks.png) 0 0/100% auto no-repeat fixed;
+}
+
+.foot {
+  font-family: arial;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: solid #ffff;
+  margin: 39% 0 0 0;
+  padding: 1% 0 0 0;
+}
